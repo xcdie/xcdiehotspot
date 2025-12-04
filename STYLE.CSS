@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #11126e;
+    /* Dark background */
+    color: #003772;
+    /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* Align items to the top */
+    min-height: 100vh;
+    padding: 20px 0;
+    /* Add some padding on top/bottom for smaller screens */
+    box-sizing: border-box;
+    /* Include padding in element's total width and height */
+}
+
+.container {
+    width: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-height: calc(100vh - 40px);
+    /* fill viewport minus body padding (20px top + 20px bottom) */
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    /* moving dark-blue overlay on black */
+    background-color: #000;
+    /* fallback black */
+    background-image: linear-gradient(90deg, rgba(3, 7, 30, 0) 0%, rgba(3, 7, 30, 0.15) 10%, rgba(6, 24, 90, 0.95) 40%, rgba(6, 24, 90, 0.95) 60%, rgba(3, 7, 30, 0.15) 90%, rgba(3, 7, 30, 0) 100%), linear-gradient(180deg, #000, #050641);
+    background-size: 300% 100%, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0, 0 0;
+    animation: slide-blue 6s linear infinite;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(16, 12, 73, 0.4);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+@keyframes slide-blue {
+    0% {
+        background-position: 0% 0, 0 0;
+    }
+    100% {
+        background-position: 100% 0, 0 0;
+    }
+}
+
+
+/* Header Styling */
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brand-name {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    background: linear-gradient(90deg, #094386, #1031c2);
+    /* Pink-purple gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.welcome-message {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-top: 0;
+    color: #c0c0c0;
+}
+
+.call-to-action {
+    font-size: 0.9em;
+    color: #a0a0a0;
+    margin-bottom: 20px;
+}
+
+.support-info {
+    font-size: 0.85em;
+    color: #a0a0a0;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.whatsapp-number {
+    color: #005b97;
+    /* blue */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.whatsapp-number:hover {
+    text-decoration: underline;
+}
+
+.access-button {
+    background: linear-gradient(90deg, #030553, #000000);
+    color: rgb(158, 163, 165);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.access-button:hover {
+    transform: translateX(-2px);
+    box-shadow: 0 6px 18px rgba(250, 27, 217, 0.25);
+}
+
+.access-button span {
+    font-size: 1.4em;
+    line-height: 1;
+}
+
+.available-plans-text {
+    font-size: 0.8em;
+    color: #2370ff;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+/* Plan Cards Styling */
+
+.plans-section {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    /* Space between cards */
+}
+
+.plan-card {
+    background-color: #1d2736;
+    /* Card background */
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(32, 5, 44, 0.3);
+    position: relative;
+    overflow: hidden;
+    /* For the color bar */
+    height: 70px;
+    /* Fixed height for consistency */
+}
+
+.plan-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+    /* Space for the color bar */
+}
+
+.color-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    /* Width of the color bar */
+    background: linear-gradient(180deg, #280650, #033c61);
+    /* Pink-purple gradient */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.plan-name {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #4d8bff;
+    margin-bottom: 2px;
+}
+
+.plan-price {
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #c0c0c0;
+}
+
+.plan-duration {
+    font-size: 0.75em;
+    color: #a0a0a0;
+}
+
+.buy-button {
+    background-color: #232347;
+    /* Darker blue for buy button */
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.buy-button:hover {
+    background-color: #5a5a8f;
+    transform: translateY(-1px);
+}
+
+
+/* Special styling for the blue "MAX PLUS 24HRS" button */
+
+.blue-buy-button {
+    background-color: #232347;
+    /* Bright blue */
+    color: rgb(255, 255, 255);
+}
+
+.blue-buy-button:hover {
+    background-color: #5a5a8f;
+}
+
+
+/* Unlimited Plan Specific Styling */
+
+.unlimited-plan {
+    background: linear-gradient(90deg, #040346, #000000);
+    /* Blue gradient for unlimited */
+    justify-content: center;
+    /* Center content */
+    text-align: center;
+    height: auto;
+    /* Allow content to dictate height */
+    padding: 25px 20px;
+    /* More padding */
+    margin-bottom: 20px;
+}
+
+.unlimited-plan .plan-details {
+    flex-direction: row;
+    /* Align icon and text horizontally */
+    align-items: center;
+    gap: 10px;
+    padding-left: 0;
+}
+
+.unlimited-plan .color-bar {
+    display: none;
+    /* Hide color bar for unlimited plan */
+}
+
+.unlimited-plan .infinity-icon {
+    font-size: 1.8em;
+    color: #e0e0e0;
+}
+
+.unlimited-plan .plan-name {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #e0e0e0;
+    margin-bottom: 0;
+}
+
+.unlimited-plan .buy-button {
+    background-color: transparent;
+    /* Transparent button for unlimited */
+    border: 2px solid #e0e0e0;
+    color: #e0e0e0;
+    padding: 12px 30px;
+    font-size: 1em;
+}
+
+.unlimited-plan .buy-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(-2px);
+    box-shadow: 0 6px 18px rgba(250, 27, 217, 0.25);
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 500px) {
+    body {
+        padding: 10px 0;
+    }
+    .container {
+        border-radius: 0;
+        /* Remove border-radius on very small screens */
+        box-shadow: none;
+    }
+    .header {
+        padding: 0 10px;
+    }
+    .access-button {
+        width: 100%;
+        font-size: 1em;
+    }
+    .plan-card {
+        padding: 12px 15px;
+        height: 65px;
+    }
+    .plan-name {
+        font-size: 1em;
+    }
+    .plan-price {
+        font-size: 0.85em;
+    }
+    .plan-duration {
+        font-size: 0.7em;
+    }
+    .buy-button {
+        padding: 8px 20px;
+        font-size: 0.85em;
+    }
+    .unlimited-plan .plan-name {
+        font-size: 1.2em;
+    }
+}
