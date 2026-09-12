@@ -1,7 +1,7 @@
 # xcdie Captive Portal 🛜
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
+![Python](https://img.shields.io/badge/python-777BB4?style=flat&logo=python&logoColor=yellow)
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=flat&logo=mysql&logoColor=white)
 
 A lightweight, secure, and fully customized Wi-Fi captive portal system. This project handles user authentication and session management for local network access, featuring a responsive frontend and a robust backend processing architecture.
