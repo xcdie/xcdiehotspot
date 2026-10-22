@@ -1,4 +1,4 @@
-# xcdie Captive Portal 🛜
+# xcdie Captive Portal 
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-777BB4?style=flat&logo=python&logoColor=yellow)
@@ -6,21 +6,21 @@
 
 A lightweight, secure, and fully customized Wi-Fi captive portal system. This project handles user authentication and session management for local network access, featuring a responsive frontend and a robust backend processing architecture.
 
-## 🚀 Features
+##  Features
 
 * **Secure Authentication:** Processes user credentials safely before granting network access.
 * **Responsive UI:** Clean, mobile-friendly login interface designed with HTML/CSS.
 * **Database Integration:** Seamlessly connects to MySQL/MariaDB for user verification and session logging.
 * **Optimized Backend:** Efficient PHP scripts handling form processing and network routing commands.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Frontend:** HTML5, CSS3
 * **Backend:** PHP
-* **Database:** MySQL / MariaDB
-* **Server:** Apache / Nginx (configured for local routing)
+* **Database:** MariaDB
+* **Server:** Apache
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 1. **Clone the repository:**
    ```bash
